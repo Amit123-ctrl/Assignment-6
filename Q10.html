@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            border: solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="a"></div>
+    <script>
+        function fun(){
+            document.getElementById('a').style.backgroundColor='red';
+        }
+        function fan(){
+            document.getElementById('a').style.backgroundColor='blue';
+        }
+        document.getElementById('a').addEventlistener('click',fun);
+        document.getElementById('a').addEventlistener('blur',fan);
+    </script>
+</body>
+</html>

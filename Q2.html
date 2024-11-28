@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>div color change</title>
+    <style>
+        div{
+            border: 2px solid black;
+            justify-content: center;
+            background-color: blanchedalmond;
+            width: fit-content;
+            height: fit-content;
+        }
+    </style>
+</head>
+<body>
+    <div id="change1">this is a container.</div>
+    <button id="change">Click</button>
+    <script>
+        function color(){
+            document.getElementById("change1").style.backgroundColor="cyan";
+        }
+        document.getElementById("change1").addEventListener("mouseover",color);
+    </script>
+</body>
+</html>

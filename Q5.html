@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prevent submit</title>
+    <style>
+        form {
+             max-width: 600px;
+             margin: 0 auto;
+             padding: 20px;
+             border: 1px solid #201c1c;
+             border-radius: 10px;
+             justify-content: center;
+            }
+        #b,#b1{
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <form id="a">
+        <fieldset>
+            <legend>
+                personal information
+            </legend>
+        <label for="name">Name</label>
+        <input type="text" placeholder="Enter the name" maxlength="10"><br>
+        <label for="name">FName</label>
+        <input type="text" placeholder="enter the fname" maxlength="10">
+    </fieldset>
+    <button type="reset" id="b">Clear</button>
+    <button type="submit" id="b1">Submit</button>
+    </form>
+    <script>
+        function fun(event){
+            event.preventDefault();
+            alert('form is not submit');
+        }
+        document.getElementById('a').addEventListener('submit',fun);
+    </script>
+</body>
+</html>

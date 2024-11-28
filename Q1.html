@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AddEventlistner</title>
+    <script>
+        function hclick(){
+            alert("button is click");
+        }
+        document.addEventListener('DOMContentLoaded',function(){
+            var b=document.getElementById("a");
+            b.addEventListener('click',hclick);
+        });
+    </script>
+</head>
+<body>
+    <p>this is paragraph</p>
+    <button id="a">click</button>
+</body>
+</html>

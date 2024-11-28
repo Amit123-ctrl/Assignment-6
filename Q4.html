@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>key press</title>
+</head>
+<body>
+    <p id="a"> this is first content.</p>
+    <script>
+        function fun(event){
+           document.getElementById('a').innerHTML="this is second content"
+        }
+        document.getElementById('a').addEventListener('dblclick',fun);
+    </script>
+</body>
+</html>
